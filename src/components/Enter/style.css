@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-enter{
+    background-image: url('../../assets/images/bg-home.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .teste{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10rem;
+    padding: 1rem;
+    background: var(--text-color);
+} */
+
+.padding-is-not-working-and-i-dont-know-why{
+    padding: 1rem;
+}
