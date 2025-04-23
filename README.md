@@ -1,12 +1,21 @@
-# React + Vite
+# The Infinity Works Homepage
+-------
+## Para os *Devs*:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- 1: Fork no repositório;
+- 2: Lá você não ira commitar na main, você vai criar uma nova onde só você vai mexer;
+comandos:
+```
+-> git checkout main 
+-> git pull origin main 
+-> git checkout -b feature/mobile[ou desktop dependendo da sua tarefa](número doa sua branch)
+```
 
-Currently, two official plugins are available:
+- 3: Seus pushes (seus git push) agora terão de indicar a branch, ou seja: ```git push origin feat/mobile0```;
+- 4: Dessa forma não nos atrapalharemos e manteremos a organização do projeto;
+- 5: Cada um deve observar e cumprir sua tarefa, indicada aqui no repositório do github.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Checklist de coisas feitas:
+- Figma: ~
+- Mobile: ~
+- Desktop: X
