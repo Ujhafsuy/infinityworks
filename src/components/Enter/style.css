@@ -1,11 +1,5 @@
 @import "tailwindcss";
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .home-enter{
     background-image: url('../../assets/images/bg-home.jpeg');
     background-size: cover;
