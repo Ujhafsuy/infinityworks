@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import Enter from './components/Enter'
 import ContentHome from './components/ContentHome'
+import ContentCards from './components/ContentCards'
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
       <div className='h-dvh'>
         <Enter />
         <ContentHome />
+        <ContentCards />
       </div>
   )
 }
