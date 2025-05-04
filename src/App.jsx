@@ -7,7 +7,7 @@ import ContentCards from './components/ContentCards'
 function App() {
 
   return (
-      <div className='h-dvh'>
+      <div className='min-h-dvh'>
         <Enter />
         <ContentHome />
         <ContentCards />

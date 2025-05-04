@@ -1,13 +1,13 @@
 import './style.css'
 import {} from 'react'
 
-function Portfolio({onClick, clicked})
+function Contato({onClick, clicked})
 {
     return(
         <>
-        <div onClick={onClick} className={"min-h-[47px] cursor-pointer flex w-[21.3125rem] border border-white border-1 rounded-lg p-2 flex-col"}>
+        <div value="1" onClick={onClick} className={"mt-4 mb-4 min-h-[47px] cursor-pointer flex w-[21.3125rem] border border-white border-1 rounded-lg p-2 flex-col"}>
             <div className="flex justify-between items-center w-[100%]">
-            <span className="text-[2rem] text-[var(--text-color)] text-center font-[400]">Portfólio</span>
+            <span className="text-[2rem] text-[var(--text-color)] text-center font-[400]">Contato</span>
             <img className="w-[24px] h-[24px]" src={"src\\assets\\images" + (!clicked ? "\\expand_content.svg" : "\\collapse_content.svg")} alt="imagem" />
             </div>
             <div className={(!clicked ? "opacity-0 max-h-0" : "opacity-100 max-h-[999px]") + " flex flex-col justify-center items-center p-4 transition-all duration-500 ease-in-out"} style={{ overflow: "hidden" }}>
@@ -21,4 +21,4 @@ function Portfolio({onClick, clicked})
     )
 }
 
-export default Portfolio
+export default Contato
