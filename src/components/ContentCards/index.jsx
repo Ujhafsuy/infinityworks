@@ -3,6 +3,7 @@ import ContatoMobile from "./ContatoMobile";
 import TimeMobile from "./TimeMobile";
 
 import PortfolioDesktop from "./PortfolioDesktop"
+import TimeDesktop from "./TimeDesktop"
 import './style.css'
 
 import {useState, useEffect} from 'react'
@@ -38,13 +39,12 @@ function ContentCards()
         }
     }
 
-    // Desktop ou Mobile
+    // Tela -> Desktop ou Mobile
     const breakpoint = 600; // Ponto em que a tela muda
     const [isMobile, setIsMobile] = useState(window.innerWidth < breakpoint);
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < breakpoint);
-            console.log("Mudou", window.innerWidth)
+            setIsMobile(window.outerWidth < breakpoint);
           };
       
           window.addEventListener('resize', handleResize);
@@ -53,6 +53,16 @@ function ContentCards()
         
     }, [])
     
+    // Botões Desktop
+    const [i, setI] = useState(0);
+    const prox = () => {
+        if(i == 1)
+            setI(0);
+        else
+            setI(i+1);
+    }
+
+
     return (
         <>
         {isMobile ? (
@@ -64,6 +74,7 @@ function ContentCards()
             ) : (
                 <>
                 <PortfolioDesktop />
+                <TimeDesktop onClick={prox} i={i}/>
                 </>
             )}
          </>
