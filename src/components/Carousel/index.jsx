@@ -147,6 +147,14 @@ export default function Carousel({
   return (
     <div
       ref={containerRef}
+      className={`relative overflow-hidden p-4 ${round
+        ? ""
+        : ""
+        }`}
+      style={{
+        width: `${baseWidth}px`,
+        ...(round && { height: `${baseWidth}px` }),
+      }}
     >
       <motion.div
         className="flex h-[200px]"
@@ -214,10 +222,10 @@ export default function Carousel({
               className={`h-2 w-2 rounded-full cursor-pointer transition-colors duration-150 ${currentIndex % items.length === index
                 ? round
                   ? "bg-white"
-                  : "bg-[#333333]"
+                  : "bg-[#8ac1ff]"
                 : round
-                  ? "bg-[#555]"
-                  : "bg-[rgba(51,51,51,0.4)]"
+                  ? "bg-[#0077FF]"
+                  : "bg-[#0077FF]"
                 }`}
               animate={{
                 scale: currentIndex % items.length === index ? 1.2 : 1,

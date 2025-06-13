@@ -1,11 +1,10 @@
 import './style.css'
 
 const ShinyText = ({ text, className = '' }) => {
-  
     return (
       <div
         className={`shiny-text ${className}`} >
-        {text}
+        <p>{text}</p>
       </div>
     );
   };
