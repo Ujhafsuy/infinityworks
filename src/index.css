@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "tailwindcss";
-
-@font-face {
+/* @font-face {
   font-family: "AppleGaramond";
   src: url('./assets/fonts/apple_garamond/AppleGaramond-Light.ttf');
   font-weight: 300;
@@ -40,20 +40,64 @@
   src: url('./assets/fonts/apple_garamond/AppleGaramond-Bold.ttf');
   font-weight: 700;
   font-style: bold;
-}
+} */
 
 
 *{
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: 'AppleGaramond', sans-serif;
+  font-family: 'Inter', sans-serif;
   letter-spacing: 0%;
   line-height: 100%;
 }
 
+<<<<<<< HEAD
 body {
   height: 100vh;
+=======
+html, body{
+  margin: 0;
+  padding: 0;
+  background: rgb(0, 0, 0);
+}
+
+@keyframes fadein {
+  0% { 
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+  
+
+}
+
+@keyframes shine {
+  0% {
+    color: rgb(255, 255, 255, 0.353);
+    text-shadow: rgb(255, 255, 255, 0.353) 1px 0 2px;
+  }
+  50% {
+    color: rgb(255, 255, 255);
+    text-shadow: rgb(255, 255, 255) 1px 0 5px;
+  }
+  
+  100% {
+    color: rgba(255, 255, 255, 0.353);
+    text-shadow: rgb(255, 255, 255, 0.353) 1px 0 2px;
+}
+}
+
+@keyframes middle-transition {
+  0% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+>>>>>>> 1db148326808e4ef644f9b4b42acfc5c2b499169
 }
 
 :root {
