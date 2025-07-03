@@ -1,4 +1,25 @@
 #Contatos {
-    margin-left: 5.6875rem;
-    margin-right: 4.6875rem;
+    margin-left: 120px;
+    margin-right: 105px;
+}
+
+#Contatos h2 {
+    margin-bottom: 107px;
+}
+
+#Contatos .ajusta-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    line-height: 50px;
+}
+
+#Contatos .ajusta-container div p {
+    line-height: 25px;
+}
+
+#Contatos .ajusta-container div div a {
+    line-height: 25px;
 }
