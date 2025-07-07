@@ -10,18 +10,18 @@ import ImgGit from '../../assets/images/ImgGit.png'
 import ImgPadrao from '../../assets/images/ImgPadrao.png'
 import './style.css'
 
-function Contacts() {
+function Contacts(className) {
     const [linkHover, setLinkHover] = useState(null)
 
     const hoverAtiva = (img) => setLinkHover(img)
     const hoverDesativa = () => setLinkHover(null)
 
     return (
-        <section id='Contatos' className='text-white flex flex-col pb-14'>
+        <section id='Contatos' className={`${className} text-white font-semibold flex flex-col pb-14`}>
             <h2 className='text-[2rem] font-[700] text-[var(--text-color)]'>Contato:</h2>
             <div className='ajusta-container'>
                 <div className='flex flex-col gap-2'>
-                    <p className='text-[1.5rem]'>
+                    <p className='text-[1.5rem] leading-[20.25rem] text-[var(--text-color)]'>
                         Você pode nos<br />
                         encontrar nas<br />
                         seguintes<br />

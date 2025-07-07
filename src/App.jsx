@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 
 import Enter from './components/Enter'
-import Contacts from './components/Contacts'
 import Welcome from './components/Welcome/index.jsx'
 
 function App() {
@@ -34,7 +33,6 @@ function App() {
       <div className='h-dvh'>
         <Enter className={invisible} click={handleChange} clique={clicked} onAnimationEnd={handleAnimationEnd}/>
         <Welcome className={visible} click={handleChange}/>
-        <Contacts />
       </div>
   )
 }

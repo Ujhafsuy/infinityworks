@@ -1,5 +1,7 @@
 import './style.css'
 
+import Contacts from '../Contacts'
+
 import logo from '../../assets/images/logo.svg'
 import ShinyText from '../ShinyText'
 import Carousel from '../Carousel'
@@ -26,6 +28,8 @@ function Welcome({ click, className }) {
                         round={false}
                     />
                 </section>
+
+                <Contacts/>
             </main>
         </div>
     )
