@@ -1,5 +1,6 @@
 import './style.css'
 
+import Contacts from '../Contacts'
 import { useEffect } from 'react'
 
 import logo from '../../assets/images/logo.svg'
@@ -34,6 +35,8 @@ function Welcome({ click, className, mobile }) {
                         round={false}
                     />
                 </section>
+
+                <Contacts/>
                 <section className=''>
                 <ContentCards/>
                 </section>
