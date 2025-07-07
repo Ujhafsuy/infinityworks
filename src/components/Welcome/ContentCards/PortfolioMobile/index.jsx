@@ -14,7 +14,7 @@ function Portfolio({onClick, clicked})
                 <h2 className="fontApple text-[2rem] text-[var(--text-color)] text-center mt-4 mb-2">Jogo Exemplo</h2>
                 <span className="text-[1rem] fontAppleLight text-[var(--text-color)] text-center">Uma jornada espacial, onde caminhamos pela filosofia da linguagem, onde ela interfere nas nossas vidas e as conexões que podem ser criadas através da linguagem.</span>
                 <div className='w-[16rem] h-[6rem] bg-[var(--bg-gray)] rounded-lg mt-4'></div>
-                <span className="fontAppleLight text-[var(--text-color)] text-center mt-4 mb-2">A aventura está repleta de desafios, que te farão pensar, e ao mesmo tempo, aprender uma nova linguagem ao mesmo tempo!</span>
+                <span className="fontAppleLight text-[var(--text-color)] text-center mt-4">A aventura está repleta de desafios, que te farão pensar, e ao mesmo tempo, aprender uma nova linguagem ao mesmo tempo!</span>
             </div>
         </div>
         </>
