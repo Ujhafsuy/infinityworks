@@ -50,10 +50,6 @@
   line-height: 100%;
 }
 
-<<<<<<< HEAD
-body {
-  height: 100vh;
-=======
 html, body{
   margin: 0;
   padding: 0;
@@ -97,7 +93,6 @@ html, body{
   100% {
     opacity: 0;
   }
->>>>>>> 1db148326808e4ef644f9b4b42acfc5c2b499169
 }
 
 :root {
