@@ -40,7 +40,7 @@ function ContentCards()
     }
 
     // Tela -> Desktop ou Mobile
-    const breakpoint = 600; // Ponto em que a tela muda
+    const breakpoint = 768; // Ponto em que a tela muda
     const [isMobile, setIsMobile] = useState(window.innerWidth < breakpoint);
     useEffect(() => {
         const handleResize = () => {

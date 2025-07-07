@@ -2,6 +2,11 @@
 
 #content {
     background-image: url('../../assets/images/bg-home.jpeg');
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.desktop #content{
+    background: #000;
 }

@@ -31,3 +31,22 @@
 .teste{
     animation: middle-transition 2s;
 }
+
+.mobile .just-dk{
+    display: none;
+}
+    
+.desktop .just-mb{
+    display: none;
+}
+
+.desktop .transition{
+    flex-direction: row;
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.desktop .transition img{
+    height: 20rem;
+    width: 20rem;
+}
