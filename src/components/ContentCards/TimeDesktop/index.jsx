@@ -85,7 +85,7 @@ function Time()
                     </div>
                 </div>
                 </div>
-                <span className="text-[4rem] text-[var(--text-color)] text-center font-[100] mt-4 mb-10">Deslize para ver a<br></br> proxima carta!</span>
+                <span className="text-[4rem] text-[var(--text-color)] text-center font-[100] mt-4 mb-10 animate-pulse">Deslize para ver a<br></br> proxima carta!</span>
             </div>
         </>
     )
