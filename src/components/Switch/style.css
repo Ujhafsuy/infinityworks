@@ -1,0 +1,7 @@
+.no-intro{
+    animation: bola-move 0.5s forwards;
+}
+
+.with-intro{
+    animation: bola-move-reverse 0.5s forwards;
+}
