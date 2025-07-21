@@ -55,15 +55,7 @@ function ContentCards()
     
     // Botões Desktop
     
-    const [anim, setAnim] = useState(false);
-    const prox = () => {
-        setAnim(true);
-    }
-
-    const setFalse = () => {
-        setAnim(false);
-    }
-
+    
 
     return (
         <>
@@ -76,7 +68,7 @@ function ContentCards()
             ) : (
                 <>
                 <PortfolioDesktop />
-                <TimeDesktop onClick={prox} anim={anim} setAnim={setFalse}/>
+                <TimeDesktop/>
                 </>
             )}
          </>

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 
 import Enter from './components/Enter'
 import Welcome from './components/Welcome/index.jsx'
+import ContentCards from './components/ContentCards/index.jsx';
 
 function App() {
 
@@ -51,9 +52,9 @@ function App() {
 
 
   return (
-      <div className={isMobile ? 'mobile' : 'desktop h-dvh'}>
-        <Enter className={invisible} click={handleChange} clique={clicked} onAnimationEnd={handleAnimationEnd} />
-        <Welcome className={visible} click={handleChange} mobile={isMobile}/>
+      <div className='h-dvh'>
+        <Enter className={invisible} click={handleChange} clique={clicked} onAnimationEnd={handleAnimationEnd}/>
+        <Welcome className={visible} click={handleChange}/>
       </div>
   )
 }
