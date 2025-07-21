@@ -147,7 +147,7 @@ export default function Carousel({
   return (
     <div
       ref={containerRef}
-      className={`relative overflow-hidden p-4 ${round
+      className={`relative overflow-hidden flex flex-col items-center ${round
         ? ""
         : ""
         }`}
@@ -215,7 +215,7 @@ export default function Carousel({
         className={`flex w-full justify-center ${round ? "absolute z-20 bottom-12 left-1/2 -translate-x-1/2" : ""
           }`}
       >
-        <div className="mt-4 flex w-[150px] justify-between px-8">
+        <div className="mt-4 pb-[0.25rem] flex w-[150px] justify-between px-8">
           {items.map((_, index) => (
             <motion.div
               key={index}

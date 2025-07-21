@@ -1,8 +1,7 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 import Enter from './components/Enter'
 import Welcome from './components/Welcome/index.jsx'
-import ContentCards from './components/ContentCards/index.jsx';
 
 function App() {
 
@@ -10,6 +9,25 @@ function App() {
   const [invisible, setInvisible] = useState("flex");
   const [visible, setVisible] = useState("hidden");
   const [c, setC] = useState(1);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 700)
+  const [isDesktop, setIsDesktop] = useState()
+
+  useEffect(() => {
+    if(localStorage.getItem('intro') === 'no-intro'){
+      setInvisible("hidden");
+      setVisible("flex");
+  }
+  })
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     if (clicked && c == 2) {
@@ -20,7 +38,7 @@ function App() {
     }
   }, [clicked, c])
   
-  const handleChange = e => {
+  const handleChange = () => {
       if( !clicked && invisible == "flex" ){
           setClicked(true)
       }
@@ -30,11 +48,12 @@ function App() {
     setC(c + 1)
   }
 
+
+
   return (
-      <div className='h-dvh'>
-        <Enter className={invisible} click={handleChange} clique={clicked} onAnimationEnd={handleAnimationEnd}/>
-        <Welcome className={visible} click={handleChange}/>
-        <ContentCards />
+      <div className={isMobile ? 'mobile' : 'desktop h-dvh'}>
+        <Enter className={invisible} click={handleChange} clique={clicked} onAnimationEnd={handleAnimationEnd} />
+        <Welcome className={visible} click={handleChange} mobile={isMobile}/>
       </div>
   )
 }
