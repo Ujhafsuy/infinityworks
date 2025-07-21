@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 import Enter from './components/Enter'
 import Welcome from './components/Welcome/index.jsx'
