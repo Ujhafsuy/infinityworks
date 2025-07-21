@@ -95,6 +95,25 @@ html, body{
   }
 }
 
+@keyframes bola-move {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-1.125rem);
+  }
+}
+
+@keyframes bola-move-reverse {
+  from{
+    transform: translateX(-1.125rem);
+  }
+  to{
+    transform: translateX(0rem);
+  }
+
+}
+
 :root {
   --text-color: #FFF;
 }

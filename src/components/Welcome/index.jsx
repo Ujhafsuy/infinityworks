@@ -36,10 +36,10 @@ function Welcome({ click, className, mobile }) {
                     />
                 </section>
 
-                <Contacts/>
                 <section className=''>
                 <ContentCards/>
                 </section>
+                <Contacts/>
             </main>
         </div>
     )

@@ -52,8 +52,8 @@ function App() {
 
   return (
       <div className={isMobile ? 'mobile' : 'desktop h-dvh'}>
-        <Enter className={invisible} click={handleChange} clique={clicked} onAnimationEnd={handleAnimationEnd} />
-        <Welcome className={visible} click={handleChange} mobile={isMobile}/>
+        <Enter className={invisible} click={handleChange} clique={clicked} onAnimationEnd={handleAnimationEnd}/>
+        <Welcome className={visible} click={handleChange}/>
       </div>
   )
 }
