@@ -1,13 +1,7 @@
 @import "tailwindcss";
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .home-enter{
-    background-image: url('../../assets/images/bg-home.jpeg');
+    background-image: url('../../assets/images/bg-homepage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -21,6 +15,19 @@
     background: var(--text-color);
 } */
 
+.home-transition{
+    background: #000;
+}
+
 .padding-is-not-working-and-i-dont-know-why{
     padding: 1rem;
+}
+
+.clicado{
+   animation: fadein 1s ease-in-out forwards;
+   animation-delay: 1.5s;
+}
+
+.teste{
+    animation: middle-transition 2s;
 }
